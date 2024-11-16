@@ -21,7 +21,7 @@ class MusicChartSearchModel : public QAbstractListModel
 {
     Q_OBJECT
     QML_ELEMENT
-    Q_PROPERTY(bool isSearching READ isSearching  WRITE setisSearching  NOTIFY isSearchingChanged FINAL)
+    Q_PROPERTY(bool isSearching READ isSearching  WRITE setIsSearching  NOTIFY isSearchingChanged FINAL)
 
 public:
     enum Role{
@@ -53,7 +53,7 @@ private:
     QNetworkReply *m_reply = nullptr;
 
     QList<MusicItemData*> m_musicList;
-    bool m_isSearching;
+    bool m_isSearching = false;
 };
 
 #endif // MUSICCHARTSEARCHMODEL_H

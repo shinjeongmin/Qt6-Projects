@@ -110,4 +110,5 @@ void MusicChartSearchModel::parseData()
 
     setIsSearching(false);
     m_reply->deleteLater();
+    m_reply = nullptr;
 }
