@@ -18,6 +18,7 @@ qt_add_qml_module(appMusicChartAPI
     QML_FILES
         Main.qml
         SOURCES MusicItemData.h MusicItemData.cpp
+        SOURCES MusicChartSearchModel.h MusicChartSearchModel.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
