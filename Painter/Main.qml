@@ -28,6 +28,9 @@ ApplicationWindow {
             Layout.fillHeight: true
             color: "lightblue"
             // TODO::ShapePainter
+            ShapePainter{
+                anchors.fill: parent
+            }
         }
     }
 
